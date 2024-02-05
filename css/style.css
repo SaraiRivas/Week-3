@@ -3,28 +3,69 @@
   width: 100%;
   height: 100%;
   margin: 3% auto;
+}
 
+.nav {
+  position: relative;
+  bottom: 42px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #242323;
+  color: #ffff;
+  padding: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.franco a {
+  color: #f0ac45;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.franco span {
+  color: #ffff;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav ul li {
+  margin: 0 20px;
+  padding: 0 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all ease 0.4s;
+}
+
+.nav ul li a:hover {
+  color: #f0ac45;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .title_one {
-    font-family: Arial, sans-serif;
-    font-size: 3em;
-    background-color: rgb(114, 195, 241);
-    padding: 30px;
-    color:aliceblue;
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  background-color: rgb(114, 195, 241);
+  padding: 30px;
+  color: aliceblue;
 
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .title_sub {
-    font-family: sans-serif;
-    font-size: 1em;
-    line-height: 20px;
-    margin-bottom: 60px;
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 20px;
+  margin-bottom: 60px;
 }
 
 .wrap {
@@ -39,31 +80,57 @@
 }
 
 .title_games {
-    font-family:  Arial, sans-serif;
-    font-size: 2.1em;
-    color: rgb(109, 187, 187);
-    text-shadow: -1px 0 #4ce0d9, 0 1px #48e7c0, 1px 0 #6eebeb, 0 -1px #44f0e1;
+  font-family: Arial, sans-serif;
+  font-size: 2.1em;
+  color: rgb(109, 187, 187);
+  text-shadow: -1px 0 #4ce0d9, 0 1px #48e7c0, 1px 0 #6eebeb, 0 -1px #44f0e1;
 }
 
 .p {
-    position: relative;
-    left: 12%;
-    font-family: 'Open Sans';
-    font-size: 15px;
-    color: #3f3e3e;
-    margin-bottom: 20px;
-    max-width: 75%;
-    line-height: 25px;
-    font-family:  Arial, sans-serif;
-    }
+  position: relative;
+  left: 12%;
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #3f3e3e;
+  margin-bottom: 20px;
+  max-width: 75%;
+  line-height: 25px;
+  font-family: Arial, sans-serif;
+}
 
 .ranking {
-    text-align: center;
+  text-align: center;
+}
 
+.ul {
+  text-align: center;
+  list-style: none;
+}
+
+.li {
+  text-decoration: none;
 }
 
 .img {
   height: 60%;
   width: 60%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    /* Ajusta el espacio superior en dispositivos móviles */
+  }
+
+  .nav ul li {
+    margin: 0.5rem 0;
+  }
 }
