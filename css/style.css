@@ -1,0 +1,24 @@
+.body {
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  height: 100%;
+  margin: 3% auto;
+}
+
+.wrap {
+    background: #fff4c4;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #3f193f36;
+  max-width: 1000px;
+  min-width: 300px;
+  padding: 20px;
+  margin: auto;
+
+}
+
+.img {
+  height: 60%;
+  width: 60%;
+  object-fit: cover;
+}
