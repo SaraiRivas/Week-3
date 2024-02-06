@@ -11,15 +11,15 @@
 <body class="body">
     <div class="nav">
         <div class="franco">
-            <h2><a href="#" data-rank="all">Ranking<span>.</span></a></h2>
+            <h2><a href="#" data-rank="all" data-filter="all">Ranking<span>.</span></a></h2>
         </div>
         <div class="nav_links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Top 1</a></li>
-                <li><a href="#">Top 3</a></li>
-                <li><a href="#">Top 5</a></li>
-                <li><a href="#">See all</a></li>
+                <li><a href="#" data-rank="all" data-filter="all">Home</a></li>
+                <li><a href="#" data-rank="1" data-filter="1">Top 1</a></li>
+                <li><a href="#" data-rank="3" data-filter="3">Top 3</a></li>
+                <li><a href="#" data-rank="5" data-filter="5">Top 5</a></li>
+                <li><a href="#" data-rank="others" data-filter="others">Others</a></li>
             </ul>
         </div>
     </div>
@@ -45,12 +45,13 @@
                                     sequel
                                     Tears Of The Kingdom is the new best game ever.
                                 </p>
-                                <a href="#" Tears of the Kingdom></a>
+                                <a href="#" data-game="Tears of the Kingdom"></a>
                             </div>
+                        </div>
                     </li>
                     <li class="li" data-rank-3="2" data-rank-5="2" data-rank-all="2">
                         <div class="games" id="2">
-                            <h2 class="title_games">2. The Lenged of Zelda: Ocarina Of Time</h2>
+                            <h2 class="title_games">2. The Legend of Zelda: Ocarina Of Time</h2>
 
                             <div class="ranking_item">
                                 <img src="img/ZeldaOOTIME.jpg" alt="Ocarina of time" class="img" />
@@ -60,7 +61,7 @@
                                     the
                                     Triforce, a sacred relic capable of granting any wish to its possessor.
                                 </p>
-                                <a href="#" Ocarina of time></a>
+                                <a href="#" data-game="Ocarina of time"></a>
                             </div>
                         </div>
                     </li>
@@ -78,13 +79,13 @@
                                     ways to
                                     complete an objective and the story can be completed in a non-linear fashion.
                                 </p>
-                                <a href="#" Breath of the wild></a>
+                                <a href="#" data-game="Breath of the wild"></a>
                             </div>
                         </div>
                     </li>
                     <li class="li" data-rank-5="4" data-rank-all="4">
                         <div class="games" id="4">
-                            <h2 class="title_games">4. The Lenged of Zelda: A Link to the Past</h2>
+                            <h2 class="title_games">4. The Legend of Zelda: A Link to the Past</h2>
 
                             <div class="ranking_item">
                                 <img src="/img/aLinktothePast.jpg" alt="A Link to the past" class="img" />
@@ -97,13 +98,13 @@
                                     Beast form out of desperation. Having successfully collected the three pieces of the
                                     Triforce, Ganon's evil desires have transformed the realm into the Dark Kingdom.
                                 </p>
-                                <a href="#" A link to the past></a>
+                                <a href="#" data-game="A link to the past"></a>
                             </div>
                         </div>
                     </li>
                     <li class="li" data-rank-5="5" data-rank-all="5">
                         <div class="games" id="5">
-                            <h2 class="title_games">5. The Lenged of Zelda: Link's Awakening</h2>
+                            <h2 class="title_games">5. The Legend of Zelda: Link's Awakening</h2>
 
                             <div class="ranking_item">
                                 <img src="/img/LinksAwakening.avif" alt="Link's Awakening" class="img" />
@@ -117,13 +118,13 @@
                                     terrible
                                     monsters that await you there.
                                 </p>
-                                <a href="#" Link's Awakening></a>
+                                <a href="#" data-game="Link's Awakening"></a>
                             </div>
                         </div>
                     </li>
-                    <li class="li" data-rank-all="6">
+                    <li class="li" data-rank-others="6" data-rank-all="6">
                         <div class="games" id="6">
-                            <h2 class="title_games">6. The Lenged of Zelda: Majora's Mask</h2>
+                            <h2 class="title_games">6. The Legend of Zelda: Majora's Mask</h2>
 
                             <div class="ranking_item">
                                 <img src="/img/zelda-Majoras-mask.webp" alt="Majora's Mask" class="img" />
@@ -137,13 +138,13 @@
                                     to achieve
                                     your goals before the final hour arrives.
                                 </p>
-                                <a href="#" Majora's Mask></a>
+                                <a href="#" data-game="Majora's Mask"></a>
                             </div>
                         </div>
                     </li>
-                    <li class="li" data-rank-all="7">
+                    <li class="li" data-rank-others="7" data-rank-all="7">
                         <div class="game" id="7">
-                            <h2 class="title_games">7. The Legend of Zelda: Twilight Princess</h2>
+                            <h2 class="title_games"> 7.The Legend of Zelda: Twilight Princess</h2>
                             <div class="ranking_item">
                                 <img src="/img/TheLegendOfZeldaTwilightPrincessHD.jpg" alt="Twilight Princess"
                                     class="img" />
@@ -157,13 +158,13 @@
                                     of The Legend of
                                     Zelda: Ocarina of Time.
                                 </p>
-                                <a href="#" Twilight Princess></a>
+                                <a href="#" data-game="Twilight Princess"></a>
                             </div>
                         </div>
                     </li>
-                    <li class="li" data-rank-all="8">
+                    <li class="li" data-rank-others="8" data-rank-all="8">
                         <div class="games" id="8">
-                            <h2 class="title_games">8. The Lenged of Zelda: The Wind Waker</h2>
+                            <h2 class="title_games">8. The Legend of Zelda: The Wind Waker</h2>
 
                             <div class="ranking_item">
                                 <img src="/img/ZeldaTheWindWaker.jpg" alt="The Wind Waker" class="img" />
@@ -174,13 +175,13 @@
                                     leads to an epic adventure on land and sea as Link tries to find clues to his
                                     sister's whereabouts.
                                 </p>
-                                <a href="#" The Wind Waker></a>
+                                <a href="#" data-game="The Wind Waker"></a>
                             </div>
                         </div>
                     </li>
-                    <li class="li" data-rank-all="9">
+                    <li class="li" data-rank-others="9" data-rank-all="9">
                         <div class="games" id="9">
-                            <h2 class="title_games">9. The Lenged of Zelda: Oracles of Ages</h2>
+                            <h2 class="title_games">9. The Legend of Zelda: Oracles of Ages</h2>
 
                             <div class="ranking_item">
                                 <img src="/img/ZeldaOracleOfAges.jpg" alt="Oracles of Ages" class="img" />
@@ -190,13 +191,13 @@
                                     the seasons
                                     totally crazed
                                 </p>
-                                <a href="#" Oracles of Ages></a>
+                                <a href="#" data-game="Oracles of Ages"></a>
                             </div>
                         </div>
                     </li>
-                    <li class="li" data-rank-all="10">
+                    <li class="li" data-rank-others="10" data-rank-all="10">
                         <div class="games" id="10">
-                            <h2 class="title_games">10. The Lenged of Zelda: Skyward Sword</h2>
+                            <h2 class="title_games">10. The Legend of Zelda: Skyward Sword</h2>
 
                             <div class="ranking_item">
                                 <img src="/img/Zelda-Skyward.jpg" alt="Skyward Sword" class="img" />
@@ -211,16 +212,16 @@
                                     improving your equipment, in the game The Legend of Zelda: Skyward Sword you will be
                                     able to forge
                                     your own destiny.</p>
-                                <a href="#" Skyward Sword></a>
+                                <a href="#" data-game="Skyward Sword"></a>
                             </div>
                         </div>
                     </li>
-                    <li class="li">
-                        <div class="gameR">
-                            <h2 class="title_games">The Legend of Zelda: The Minish Cap</h2>
+                    <li class="li" data-rank-others="11" data-rank-all="11">
+                        <div class="games" id="11">
+                            <h2 class="title_games">11. The Legend of Zelda: The Minish Cap</h2>
                             <div class="ranking_item">
                                 <img src="/img/ZeldaTheMinishCap.jpg" alt="The Minish Cap" class="img" />
-                                <p class="game_p">Legend that revolves around the Quadruple Sword, the other games being
+                                <p class="p">Legend that revolves around the Quadruple Sword, the other games being
                                     The Legend of
                                     Zelda: Four Swords and The Legend of Zelda: Four Swords Adventures. The game is a
                                     prequel to Four
@@ -230,15 +231,13 @@
                                     adventure. Also notable
                                     is the presence of the Minish race, this being their only appearance in the saga.
                                 </p>
-                                <a href="#" The Minish Cap></a>
+                                <a href="#" data-game="The Minish Cap"></a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
-    </section>
     </div>
     <script src="/js/main.js"></script>
 </body>
