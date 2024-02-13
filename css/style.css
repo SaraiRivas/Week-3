@@ -1,135 +1,149 @@
 .body {
-    background-color: rgb(248, 245, 245);
-    width: 100%;
-    height: 100%;
-    margin: 3% auto;
-  }
-  
-  .nav {
-    position: relative;
-    bottom: 42px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.post {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    height: 70%;
+    width: 70%;
+    padding: 2.5%;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007BFF;
+    margin-left: 2%;
+}
+
+span {
+    color: black;
+}
+
+.header {
+    background-color: #333;
+    padding: 1em;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+}
+
+.likes, .tags, .create-date {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+.tags {
+    color: #007BFF;
+}
+
+.create-date {
+    font-style: italic;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
-    background-color: #242323;
-    color: #ffff;
-    padding: 1rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  
-  .franco a {
-    color: #f0ac45;
-    text-decoration: none;
-    font-size: 2.5rem;
-  }
-  
-  .franco span {
-    color: #ffff;
-  }
-  
-  .nav ul {
-    display: flex;
-    list-style-type: none;
-  }
-  
-  .nav ul li {
-    margin: 0 20px;
-    padding: 0 10px;
-  }
-  
-  .nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    transition: all ease 0.4s;
-  }
-  
-  .nav ul li a:hover {
-    color: #f0ac45;
-  }
-  
-  .title {
-    text-align: center;
-  }
-  
-  .title_one {
-    font-family: Arial, sans-serif;
-    font-size: 3em;
-    background-color: rgb(114, 195, 241);
-    padding: 30px;
-    color: aliceblue;
-  
-    border-radius: 5px;
-  }
-  
-  .title_sub {
-    font-family: sans-serif;
-    font-size: 1em;
-    line-height: 20px;
-    margin-bottom: 60px;
-  }
-  
-  .wrap {
-    background: #ffffff;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #3f193f36;
-    max-width: 80%;
-    min-width: 300px;
-    padding: 20px;
-    margin: auto;
-  }
-  
-  .title_games {
-    font-family: Arial, sans-serif;
-    font-size: 2.1em;
-    color: rgb(109, 187, 187);
-    text-shadow: -1px 0 #4ce0d9, 0 1px #48e7c0, 1px 0 #6eebeb, 0 -1px #44f0e1;
-  }
-  
-  .p {
+    align-items: center;
+    flex-wrap: wrap;
     position: relative;
-    left: 12%;
-    font-family: "Open Sans";
-    font-size: 15px;
-    color: #3f3e3e;
-    margin-bottom: 20px;
-    max-width: 75%;
-    line-height: 25px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .ranking {
-    text-align: center;
-  }
-  
-  .ul {
-    text-align: center;
-    list-style: none;
-  }
-  
-  .li {
-    text-decoration: none;
-  }
-  
-  .img {
-    height: 60%;
-    width: 60%;
-    object-fit: cover;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .nav {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav ul {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 1rem;
-    }
-  
-    .nav ul li {
-      margin: 0.5rem 0;
-    }
-  }
+}
+
+.dropdownBtn {
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.dropdownBtn:hover,
+.searchButton:hover {
+    background-color: #536db6;
+    transition: background-color 0.3s;
+}
+
+.tags-dropdown {
+    display: none;
+    position: fixed;
+    top: calc(100% + 10px); 
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+
+.tags-dropdown.show {
+    display: block;
+}
+
+.tags-dropdown .tag {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tags-dropdown .tag:hover {
+    background-color: #f0f0f0;
+}
+
+.tags-dropdown .tag.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.searchInput {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.searchButton {
+    margin: 10px;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.post-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: red;
+
+}
+
+.post-subTitle {
+    color: blue
+
+}
